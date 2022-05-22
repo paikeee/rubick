@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #faf8f0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <GridPane id="gameGrid0" fx:id="gridPane0" gridLinesVisible="true" hgap="2.0" layoutX="228.0" layoutY="14.0" prefHeight="150.0" prefWidth="150.0" rotate="180.0" vgap="2.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane id="gameGrid1" fx:id="gridPane1" gridLinesVisible="true" hgap="2.0" layoutX="78.0" layoutY="164.0" prefHeight="150.0" prefWidth="150.0" rotate="90.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane id="gameGrid2" fx:id="gridPane2" gridLinesVisible="true" hgap="2.0" layoutX="228.0" layoutY="164.0" prefHeight="150.0" prefWidth="150.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane id="gameGrid3" fx:id="gridPane3" gridLinesVisible="true" hgap="2.0" layoutX="378.0" layoutY="164.0" prefHeight="150.0" prefWidth="150.0" rotate="-90.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane id="gameGrid4" fx:id="gridPane4" gridLinesVisible="true" hgap="2.0" layoutX="228.0" layoutY="314.0" prefHeight="150.0" prefWidth="150.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane id="gameGrid5" fx:id="gridPane5" gridLinesVisible="true" hgap="2.0" layoutX="228.0" layoutY="464.0" prefHeight="150.0" prefWidth="150.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button id="newGameButton" fx:id="newGameButton" layoutX="51.0" layoutY="61.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" text="NEW GAME" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="randomButton" fx:id="randomButton" layoutX="424.0" layoutY="61.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" text="SET RANDOM" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="solveButton" fx:id="solveButton" layoutX="424.0" layoutY="361.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" text="SOLVE" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="testing" fx:id="testing" layoutX="51.0" layoutY="361.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" text="TEST" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="move" fx:id="move" layoutX="424.0" layoutY="361.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" text="MOVE" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane id="paneGrid" fx:id="paneGrid" layoutX="126.0" layoutY="15.0" prefHeight="601.0" prefWidth="353.0" visible="false">
+         <children>
+            <Button fx:id="l2" layoutX="110.0" layoutY="206.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: #bcafa1;" text="L" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="r3" layoutX="310.0" layoutY="254.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="27.0" rotate="-90.0" style="-fx-background-color: #bcafa1;" text="R" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="l0" layoutX="110.0" layoutY="55.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" rotate="180.0" style="-fx-background-color: #bcafa1;" text="L" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="l3" layoutX="310.0" layoutY="155.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" rotate="-90.0" style="-fx-background-color: #bcafa1;" text="L" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="l1" layoutX="9.0" layoutY="155.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" rotate="90.0" style="-fx-background-color: #bcafa1;" text="L" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="l4" layoutX="110.0" layoutY="356.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: #bcafa1;" text="L" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="l5" layoutX="110.0" layoutY="507.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: #bcafa1;" text="L" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="r0" layoutX="209.0" layoutY="55.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="27.0" rotate="180.0" style="-fx-background-color: #bcafa1;" text="R" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="r1" layoutX="9.0" layoutY="254.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="27.0" rotate="90.0" style="-fx-background-color: #bcafa1;" text="R" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="r4" layoutX="209.0" layoutY="356.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="27.0" style="-fx-background-color: #bcafa1;" text="R" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="r5" layoutX="209.0" layoutY="507.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="27.0" style="-fx-background-color: #bcafa1;" text="R" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="r2" layoutX="209.0" layoutY="206.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="27.0" style="-fx-background-color: #bcafa1;" text="R" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <HBox fx:id="hBoxSteps" alignment="CENTER" layoutX="424.0" layoutY="444.0" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" visible="false">
+         <children>
+            <Label fx:id="labelSteps" text="Steps: " textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="hBoxTest" alignment="CENTER" layoutX="51.0" layoutY="361.0" prefHeight="56.0" prefWidth="138.0" style="-fx-background-color: #bcafa1;" visible="false">
+         <children>
+            <Label fx:id="labelTest" text="Processing..." textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
