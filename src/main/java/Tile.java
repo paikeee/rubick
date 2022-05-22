@@ -5,10 +5,6 @@ public class Tile {
     char color;
     static char[] colors = {'O', 'G', 'W', 'B', 'R', 'Y'};
 
-    public Tile() {
-
-    }
-
     public static Pane getTile(char current) {
         Pane pane = new Pane();
         pane.setPrefSize(45, 45);

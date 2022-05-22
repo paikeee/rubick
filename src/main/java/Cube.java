@@ -7,10 +7,6 @@ public class Cube {
     private final ArrayDeque<Tile[][][]> stackBody = new ArrayDeque<>();
     private int steps = 0;
 
-    public Cube() {
-
-    }
-
     // Задание правильной конфигурации кубика
     public void setGameTiles() {
         body = new Tile[6][3][3];
