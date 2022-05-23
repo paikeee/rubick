@@ -23,7 +23,7 @@ public class Cube {
     // Задание случайно конфигурации кубика
     public void randomGameTiles() {
         setGameTiles();
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 500; i++) {
             Random random = new Random();
             int method = random.nextInt(2);
             int s = random.nextInt(6);

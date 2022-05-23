@@ -42,7 +42,53 @@ public class Solver {
             finalStep();
         }
         cube.controlStack();
-//        return getStack();
+    }
+
+    public void solveFlower() {
+        cube.controlStack();
+        while (!checkFlower()) {
+            flower();
+        }
+    }
+
+    public void solveCross() {
+        if (!checkRightCross()) {
+            cross();
+            crossCorrector();
+        }
+    }
+
+    public void solveAngles() {
+        while (!checkAnglesWhite()) {
+            angles();
+        }
+    }
+
+    public void solveEdges() {
+        while (!checkEdges()) {
+            edges();
+        }
+    }
+
+    public void solveYellowCross() {
+        if (!checkYellowCross()) {
+            if (!checkYellowLine()) {
+                if (!checkYellowClock()) {
+                    cube.rotateSideRight(0);
+                    rightHand(0);
+                    rightHand(0);
+                    cube.rotateSideLeft(0);
+                    checkYellowLine();
+                }
+            }
+        }
+    }
+
+    public void solveYellowFull() {
+        checkYellowAngles();
+        while (!checkYellowFull()) {
+            fullYellow();
+        }
     }
 
     // Сборка цветочка
@@ -93,7 +139,7 @@ public class Solver {
 
     }
 
-    private boolean checkFlower() {
+    public boolean checkFlower() {
         Tile[][] body = cube.getGameTiles()[5];
         return body[0][1].color == 'W' && body[1][2].color == 'W' &&
                 body[1][0].color == 'W' && body[2][1].color == 'W';
@@ -113,7 +159,7 @@ public class Solver {
         cube.rotateColumnUp(5, 2);
     }
 
-    private boolean checkRightCross() {
+    public boolean checkRightCross() {
         Tile[][][] body = cube.getGameTiles();
         return body[0][1][1].color == body[0][0][1].color && body[1][1][1].color == body[1][0][1].color &&
                 body[3][1][1].color == body[3][0][1].color && body[4][1][1].color == body[4][0][1].color && checkWhiteCross();
@@ -307,7 +353,7 @@ public class Solver {
         }
     }
 
-    private boolean checkAnglesWhite() {
+    public boolean checkAnglesWhite() {
         Tile[][][] body = cube.getGameTiles();
         if (body[2][0][0].color == 'W' && body[2][0][2].color == 'W' &&
                 body[2][2][0].color == 'W' && body[2][2][2].color == 'W') {
@@ -483,7 +529,7 @@ public class Solver {
         }
     }
 
-    private boolean checkEdges() {
+    public boolean checkEdges() {
         Tile[][][] body = cube.getGameTiles();
         int[] sides = new int[] {0, 1, 4, 3};
         for (int s = 0; s < 4; s++) {
@@ -495,7 +541,7 @@ public class Solver {
     }
 
     // Сборка желтого креста
-    private boolean checkYellowCross() {
+    public boolean checkYellowCross() {
         Tile[][][] body = cube.getGameTiles();
         return body[5][0][1].color == 'Y' && body[5][1][0].color == 'Y' &&
                 body[5][1][2].color == 'Y' && body[5][2][1].color == 'Y';
@@ -633,7 +679,7 @@ public class Solver {
         }
     }
 
-    private boolean checkYellowFull() {
+    public boolean checkYellowFull() {
         Tile[][][] body = cube.getGameTiles();
         for (int i = 0; i < 3; i += 2) {
             for (int j = 0; j < 3; j += 2) {
@@ -646,7 +692,7 @@ public class Solver {
     }
 
     // Финальная сборка всех слоев
-    private void finalStep() {
+    public void finalStep() {
         int[] sides = new int[] {0, 1, 4, 3};
         boolean correct = false;
         if (cube.getGameTiles()[0][2][2].color == cube.getGameTiles()[0][2][1].color &&
